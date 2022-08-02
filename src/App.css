@@ -18,7 +18,7 @@ header {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-color: aquamarine;
+  background-color: aqua;
 }
 
 
@@ -48,7 +48,7 @@ form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: aqua;
+  background: green;
   color: black;
   border: none;
   border-radius: 50%;
@@ -87,7 +87,7 @@ form button {
   float: right;
   margin-right: 10px;
   color: black;
-  background-color: white;
+  background-color: red;
   border: none;
   border-radius: 50%;
   width: 50px;
