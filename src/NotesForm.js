@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import notes from "./notes";
 
-function NotesForm(){
+function NotesForm(props){
 
-    const [newNote, setNewNote] = useState({
+    const [note, setNote] = useState({
         title: "",
         content: ""
     })
 
     function handleChanges(event){
         const {name, value} = event.target;
-        setNewNote(prevState => {
+        setNote(prevState => {
             return {
                 ...prevState,
                 [name]: value
@@ -19,15 +18,20 @@ function NotesForm(){
     }
 
     function submitNote(event){
-
+        props.onAdd(note)
+        setNote({
+            title: "",
+            content: ""
+        })
+        event.preventDefault();
     }
 
 
     return (
         <div>
             <form>
-                <input type="text" name="title" value={notes.title} onChange={handleChanges} placeholder="Enter your Title..." />
-                <textarea name="content" value={notes.content} onChange={handleChanges} placeholder="Enter your Content..." />
+                <input type="text" name="title" value={note.title} onChange={handleChanges} placeholder="Enter your Title..." />
+                <textarea name="content" value={note.content} onChange={handleChanges} placeholder="Enter your Content..." />
                 <button onClick={submitNote}>Add Note</button>
             </form>
         </div>
@@ -35,3 +39,4 @@ function NotesForm(){
 }
 
 export default NotesForm;
+

@@ -1,11 +1,15 @@
 import React from "react";
 
 function Notes(props){
+
+    function handleClick(){
+        props.onDelete(props.id)
+    }
     return (
         <div className="note">
-            <h2>Title: {props.title}</h2>
-            <p>Content: {props.content}</p>
-            <button>Delete Note</button>
+            <h2>{props.title}</h2>
+            <p>{props.content}</p>
+            <button onClick={handleClick}>Delete Note</button>
         </div>
     )
 }
