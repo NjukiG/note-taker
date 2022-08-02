@@ -2,7 +2,13 @@
   text-align: center;
 }
 
+body{
+  background-color: black;
 
+}
+
+
+/* The header area styles */
 header {
   background-color: #282c34;
   min-height: 5vh;
@@ -12,10 +18,48 @@ header {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-color: aqua;
+  background-color: aquamarine;
 }
 
 
+/* Form Area styles */
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: aqua;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Notes area styles */
 .note {
   background: aqua;
   border-radius: 7px;
@@ -25,10 +69,12 @@ header {
   margin: 16px;
   float: left;
 }
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
+
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
@@ -36,8 +82,21 @@ header {
   word-wrap: break-word;
 }
 
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+}
 
-
+/* Footer area styles */
 footer {
   position: absolute;
   text-align: center;

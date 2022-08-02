@@ -4,6 +4,7 @@ import Header from "./Header";
 import Notes from './Notes';
 import Footer from './Footer';
 import notes from './notes';
+import NotesForm from './NotesForm';
 
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <NotesForm />
       {notes.map(mapThroughNotes)}
       <Footer />
     </div>
