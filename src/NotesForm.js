@@ -5,7 +5,7 @@ function NotesForm(props){
     const [note, setNote] = useState({
         title: "",
         content: ""
-    })
+    });
 
     function handleChanges(event){
         const {name, value} = event.target;
@@ -24,7 +24,9 @@ function NotesForm(props){
             content: ""
         })
         event.preventDefault();
+
     }
+    
 
 
     return (
