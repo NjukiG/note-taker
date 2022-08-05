@@ -6,7 +6,7 @@ function Links() {
     <div style={{paddingTop: '4rem'}} className='card-container'>
         <div className='about-form card-form card' style={{width: '18rem', backgroundColor: 'aqua', marginTop: '2px'}}>
             <h2>Link:</h2>
-                <a style={{textDecoration: 'none'}} href='https://michael-murage.github.io/Portfolio/'>My portfolio</a>
+                <a style={{textDecoration: 'none'}} href='#'>My portfolio</a>
         </div>
         <div className='about-form card-form card' style={{width: '18rem', backgroundColor: 'aqua', marginTop: '2px'}}>
             <h2>Other link:</h2>
