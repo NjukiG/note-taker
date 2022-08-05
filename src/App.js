@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-// import NavBar from './NavBar';
-import Notes from './Notes';
 import Footer from './Footer';
+import Notes from './Notes';
 import NotesForm from './NotesForm';
 
 
@@ -11,7 +10,7 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/notes")
+    fetch("https://note-taker-json-server.herokuapp.com/notes")
       .then((r) => r.json())
       .then((notes) => setNotes(notes))
       .catch(error => console.log(error))

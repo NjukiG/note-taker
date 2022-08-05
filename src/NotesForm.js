@@ -33,7 +33,7 @@ function NotesForm({onAdd}){
         })
         event.preventDefault();
           
-        fetch("http://localhost:3000/notes", {
+        fetch("https://note-taker-json-server.herokuapp.com/notes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
