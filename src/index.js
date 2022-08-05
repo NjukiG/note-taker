@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './About';
-import NavBar from './NavBar';
-import Links from './Links';
+import About from './components/About';
+import NavBar from './components/NavBar';
+import Links from './components/Links';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
