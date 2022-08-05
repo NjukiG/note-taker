@@ -4,10 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './About';
+import NavBar from './NavBar';
+import Links from './Links';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route exact path='/about' element={<About/>}/>
+        <Route exact path='/links' element={<Links/>}/>
+        <Route path='/' element={<App />}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

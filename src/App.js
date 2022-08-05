@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from './Header';
+// import NavBar from './NavBar';
 import Notes from './Notes';
 import Footer from './Footer';
 import NotesForm from './NotesForm';
@@ -13,7 +13,8 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3000/notes")
       .then((r) => r.json())
-      .then((notes) => setNotes(notes));
+      .then((notes) => setNotes(notes))
+      .catch(error => console.log(error))
   }, []);
   
   function addNewNote(newNote){
@@ -44,7 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <NavBar /> */}
       <NotesForm onAdd={addNewNote} />
       {notes.map(mapThroughNotes)}
       <Footer />

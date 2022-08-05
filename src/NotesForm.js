@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 
-function NotesForm(props){
+function NotesForm({onAdd}){
 
     const [note, setNote] = useState({
         title: "",
         content: ""
     });
+
+    // useEffect(() => {
+    //     fetch("http://localhost:3000/notes")
+    //       .then((r) => r.json())
+    //       .then((notes) => setNotes(notes))
+    //       .catch(error => console.log(error))
+    //   }, []);
+
 
     function handleChanges(event){
         const {name, value} = event.target;
@@ -18,13 +26,24 @@ function NotesForm(props){
     }
 
     function submitNote(event){
-        props.onAdd(note)
+        onAdd(note)
         setNote({
             title: "",
             content: ""
         })
         event.preventDefault();
-
+          
+        fetch("http://localhost:3000/notes", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({note}),
+            })
+            .then(responce => responce.json())
+            .then(noteData => console.log(noteData))
+            // .catch(error => console.log(error))
     }
     
 
