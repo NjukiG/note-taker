@@ -7,9 +7,9 @@ function NavBar(){
         <nav className="top-nav">
             <h1>George's Notes Taker</h1>
             <div>
-                <NavLink id='home-link' to='/'>Home</NavLink>
-                <NavLink id='about-link' to='/about'>About</NavLink>
-                <NavLink id='links' to='/links'>Links</NavLink>
+                <NavLink className="navigations" id='home-link' to='/'>Home</NavLink>
+                <NavLink className="navigations" id='about-link' to='/about'>About</NavLink>
+                <NavLink className="navigations" id='links' to='/links'>Links</NavLink>
             </div>
         </nav>
     )

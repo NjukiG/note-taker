@@ -26,7 +26,5 @@ You just load it up on your browser and click the button to generate jokes rando
 
 I also has links to be able to take you to the notes page, the about page which includes the descriptions of the app, and also the links to my portfiolio and a random jokes generator app
 
-Live link https://georges-note-taker.herokuapp.com/
+My live link for the App hosted on heroku:  https://georges-note-taker.herokuapp.com/
 
-
-API 

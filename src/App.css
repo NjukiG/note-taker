@@ -29,9 +29,17 @@ body{
   font-size: 20px;
 }
 
-#home-link{
-  background-color: green;
+
+.navigations:hover{
+  background-color: black;
+  color: aqua;
+  border-radius: 25%;
 }
+
+
+/* #home-link{
+  background-color: green;
+} */
 
 /* Form Area styles */
 form {
