@@ -28,3 +28,4 @@ I also has links to be able to take you to the notes page, the about page which 
 
 My live link for the App hosted on heroku:  https://georges-note-taker.herokuapp.com/
 
+

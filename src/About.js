@@ -6,7 +6,7 @@ function About() {
         <div className='card-form card about-form' style={{width: '50%', backgroundColor: 'aqua', marginTop: '2px'}}>
             <h2>Description:</h2>
                 <p> I built this app as a project for my bootcamp using React.</p>
-                <p>I definately had lots of help and kinda stole some code from a classmate for the react-router part.</p>
+                <p>I definately had some help from my TMs and collegues.</p>
                 <p>Definately not taking credit for this but will continue to practice until i get it.</p>
         </div>
         <div className='card-form card about-form' style={{width: '50%', backgroundColor: 'aqua', marginTop: '2px'}}>
